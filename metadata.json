@@ -1,0 +1,6 @@
+{
+  "name": "IPA Master - Luyện Phát Âm Chuẩn",
+  "description": "Ứng dụng luyện phát âm chuẩn 44 âm IPA tiếng Anh với sơ đồ giải phẫu khẩu hình chi tiết, game phân tích âm của từ phân biệt nguyên âm và phụ âm, kéo thả ghép phiên âm 200 từ, và lộ trình học tập thông minh.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

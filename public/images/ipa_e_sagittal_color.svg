@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 380" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#0f172a" />
+      <stop offset="100%" stopColor="#020617" />
+    </linearGradient>
+
+    <!-- Head & Tissue Gradient -->
+    <linearGradient id="tissueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stopColor="#334155" />
+      <stop offset="100%" stopColor="#1e293b" />
+    </linearGradient>
+
+    <!-- Tongue Muscle Gradient -->
+    <linearGradient id="tongueGrad" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stopColor="#fb7185" />
+      <stop offset="60%" stopColor="#e11d48" />
+      <stop offset="100%" stopColor="#9f1239" />
+    </linearGradient>
+
+    <!-- Airflow Wave Gradient -->
+    <linearGradient id="airFlowGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stopColor="#38bdf8" stopOpacity="0.9" />
+      <stop offset="100%" stopColor="#818cf8" stopOpacity="0.4" />
+    </linearGradient>
+
+    <!-- Bone / Palate Gradient -->
+    <linearGradient id="boneGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#e2e8f0" />
+      <stop offset="100%" stopColor="#94a3b8" />
+    </linearGradient>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Dark Educational Canvas -->
+  <rect width="520" height="380" rx="16" fill="url(#bgGrad)" stroke="#1e293b" stroke-width="1.5" />
+
+  <!-- Grid lines subtle for medical blueprint feel -->
+  <g opacity="0.07" stroke="#94a3b8" stroke-width="0.75">
+    <line x1="40" y1="0" x2="40" y2="380" />
+    <line x1="100" y1="0" x2="100" y2="380" />
+    <line x1="160" y1="0" x2="160" y2="380" />
+    <line x1="220" y1="0" x2="220" y2="380" />
+    <line x1="280" y1="0" x2="280" y2="380" />
+    <line x1="340" y1="0" x2="340" y2="380" />
+    <line x1="400" y1="0" x2="400" y2="380" />
+    <line x1="460" y1="0" x2="460" y2="380" />
+    <line x1="0" y1="60" x2="520" y2="60" />
+    <line x1="0" y1="120" x2="520" y2="120" />
+    <line x1="0" y1="180" x2="520" y2="180" />
+    <line x1="0" y1="240" x2="520" y2="240" />
+    <line x1="0" y1="300" x2="520" y2="300" />
+  </g>
+
+  <!-- Title Badge -->
+  <g>
+    <rect x="24" y="18" width="220" height="28" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="1" />
+    <circle cx="38" cy="32" r="4" fill="#3b82f6" />
+    <text x="52" y="36" fill="#f8fafc" font-size="12" font-family="sans-serif" font-weight="bold">
+      Giải phẫu cắt dọc âm /e/ (Sagittal)
+    </text>
+  </g>
+
+  <!-- VOCAL TRACT SAGITTAL ANATOMY -->
+  <g transform="translate(45, 10)" filter="url(#softGlow)">
+    <!-- Pharyngeal wall & skull back (Thành sau họng) -->
+    <path d="M 170 30 Q 150 70 140 120 Q 135 180 135 240 Q 135 280 130 330 L 95 330 Q 100 280 100 240 Q 100 170 105 110 Q 115 60 140 20 Z" 
+          fill="url(#tissueGrad)" stroke="#475569" stroke-width="1.5" />
+
+    <!-- Nasal Cavity (Khoang mũi) -->
+    <path d="M 165 40 Q 230 30 280 55 L 295 105 L 265 105 Q 220 70 165 75 Z" 
+          fill="#1e293b" opacity="0.6" stroke="#475569" stroke-width="1" />
+
+    <!-- Hard Palate (Vòm cứng) -->
+    <path d="M 230 115 Q 275 118 295 125 L 295 133 Q 270 126 230 123 Z" 
+          fill="url(#boneGrad)" stroke="#64748b" stroke-width="1" />
+
+    <!-- Soft Palate & Velum / Uvula (Vòm mềm và lưỡi gà hơi nâng để đóng khoang mũi) -->
+    <path d="M 230 115 Q 190 120 172 138 Q 170 148 174 154 Q 178 152 182 142 Q 195 130 230 123 Z" 
+          fill="#f43f5e" stroke="#be123c" stroke-width="1.2" />
+
+    <!-- Upper Lip & Teeth (Môi trên & Răng trên) -->
+    <path d="M 295 125 Q 315 132 325 145 L 315 152 Q 305 142 295 133 Z" fill="#e11d48" />
+    <!-- Upper Incisor -->
+    <path d="M 292 127 L 297 142 L 303 142 L 297 127 Z" fill="#f8fafc" stroke="#94a3b8" stroke-width="1" />
+
+    <!-- Lower Lip & Teeth (Môi dưới & Răng dưới - Hàm mở vừa phải ~ 12mm) -->
+    <!-- Lower Incisor -->
+    <path d="M 276 172 L 282 172 L 278 187 L 273 187 Z" fill="#f8fafc" stroke="#94a3b8" stroke-width="1" />
+    <path d="M 282 172 Q 310 175 315 190 L 305 198 Q 295 186 278 187 Z" fill="#e11d48" />
+    <!-- Mandible / Chin contour (Hàm dưới) -->
+    <path d="M 273 187 Q 275 220 280 250 Q 250 280 210 290 L 195 330 L 160 330 Q 175 280 185 240 Q 210 230 230 200 Z" 
+          fill="url(#tissueGrad)" stroke="#475569" stroke-width="1.5" />
+
+    <!-- TONGUE (LƯỠI ÂM /e/): Thân lưỡi ở vị trí giữa-trước (Mid-Front), đỉnh lưỡi nằm sau răng dưới -->
+    <path d="M 155 245 Q 165 200 175 170 Q 195 142 230 140 Q 260 144 275 172 L 255 195 Q 220 205 170 230 Z" 
+          fill="url(#tongueGrad)" stroke="#e11d48" stroke-width="2" />
+
+    <!-- Tongue Muscle interior texture -->
+    <path d="M 175 225 Q 200 185 240 165" stroke="#fda4af" stroke-width="1" opacity="0.6" stroke-dasharray="3 2" fill="none" />
+    <path d="M 190 235 Q 215 200 245 180" stroke="#fda4af" stroke-width="1" opacity="0.5" stroke-dasharray="3 2" fill="none" />
+
+    <!-- Epiglottis (Nắp thanh quản) -->
+    <path d="M 152 248 Q 148 232 152 222 Q 157 224 158 238 Q 159 252 154 260 Z" fill="#f43f5e" stroke="#9f1239" stroke-width="1" />
+
+    <!-- Trachea / Vocal Folds (Thanh quản & Dây thanh rung) -->
+    <g transform="translate(130, 270)">
+      <!-- Vocal cord vibration indicator -->
+      <path d="M 14 0 Q 19 6 14 12 Q 19 18 14 24" fill="none" stroke="#38bdf8" stroke-width="2.5" />
+      <path d="M 10 0 Q 15 6 10 12 Q 15 18 10 24" fill="none" stroke="#38bdf8" stroke-width="2" opacity="0.7" />
+      <circle cx="12" cy="12" r="10" fill="#0284c7" opacity="0.2" />
+    </g>
+
+    <!-- Airflow path (Luồng hơi di chuyển qua khoang miệng không bị cản trở) -->
+    <path d="M 145 270 Q 150 200 160 170 Q 170 145 200 135 Q 230 132 260 135 T 310 156" 
+          fill="none" stroke="url(#airFlowGrad)" stroke-width="3.5" stroke-dasharray="6 4" stroke-linecap="round" />
+    <!-- Arrowhead -->
+    <polygon points="310,152 322,158 312,164" fill="#38bdf8" />
+  </g>
+
+  <!-- ANATOMICAL CALLOUT LABELS -->
+  <!-- 1. Vị trí thân lưỡi (Mid-Front) -->
+  <g>
+    <line x1="275" y1="150" x2="355" y2="85" stroke="#f43f5e" stroke-width="1.5" stroke-dasharray="3 3" />
+    <circle cx="275" cy="150" r="4" fill="#f43f5e" />
+    <rect x="350" y="70" width="155" height="42" rx="8" fill="#1e1b4b" stroke="#6366f1" stroke-width="1.2" />
+    <text x="360" y="88" fill="#e0e7ff" font-size="11" font-family="sans-serif" font-weight="bold">Thân lưỡi vồng vừa (Mid)</text>
+    <text x="360" y="103" fill="#a5b4fc" font-size="9.5" font-family="sans-serif">Hướng về phía trước (Front)</text>
+  </g>
+
+  <!-- 2. Vòm họng & Vòm mềm -->
+  <g>
+    <line x1="220" y1="130" x2="280" y2="45" stroke="#64748b" stroke-width="1.5" stroke-dasharray="3 3" />
+    <circle cx="220" cy="130" r="3.5" fill="#64748b" />
+    <rect x="280" y="32" width="145" height="34" rx="7" fill="#0f172a" stroke="#475569" stroke-width="1" />
+    <text x="290" y="47" fill="#e2e8f0" font-size="10.5" font-family="sans-serif" font-weight="bold">Vòm miệng & Lưỡi gà</text>
+    <text x="290" y="60" fill="#94a3b8" font-size="9" font-family="sans-serif">Nâng nhẹ chặn khoang mũi</text>
+  </g>
+
+  <!-- 3. Độ mở hàm (Jaw opening) -->
+  <g>
+    <line x1="345" y1="170" x2="370" y2="185" stroke="#10b981" stroke-width="1.5" stroke-dasharray="3 3" />
+    <circle cx="345" cy="170" r="4" fill="#10b981" />
+    <rect x="360" y="175" width="145" height="42" rx="8" fill="#064e3b" stroke="#10b981" stroke-width="1" />
+    <text x="370" y="193" fill="#a7f3d0" font-size="11" font-family="sans-serif" font-weight="bold">Khoảng hở hàm ~ 12mm</text>
+    <text x="370" y="208" fill="#6ee7b7" font-size="9.5" font-family="sans-serif">Môi mở tự nhiên, không chu</text>
+  </g>
+
+  <!-- 4. Đầu lưỡi hạ thấp sau răng dưới -->
+  <g>
+    <line x1="320" y1="200" x2="360" y2="245" stroke="#ec4899" stroke-width="1.5" stroke-dasharray="3 3" />
+    <circle cx="320" cy="200" r="4" fill="#ec4899" />
+    <rect x="350" y="235" width="155" height="38" rx="8" fill="#831843" stroke="#f472b6" stroke-width="1" />
+    <text x="360" y="252" fill="#fbcfe8" font-size="10.5" font-family="sans-serif" font-weight="bold">Đầu lưỡi chạm răng dưới</text>
+    <text x="360" y="265" fill="#f472b6" font-size="9" font-family="sans-serif">Nằm thấp tại đáy khoang miệng</text>
+  </g>
+
+  <!-- 5. Dây thanh quản rung (Voiced) -->
+  <g>
+    <line x1="175" y1="290" x2="105" y2="330" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="3 3" />
+    <circle cx="175" cy="290" r="4" fill="#38bdf8" />
+    <rect x="25" y="320" width="150" height="38" rx="8" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1" />
+    <text x="35" y="337" fill="#bae6fd" font-size="10.5" font-family="sans-serif" font-weight="bold">Dây thanh rung (Voiced)</text>
+    <text x="35" y="350" fill="#7dd3fc" font-size="9" font-family="sans-serif">Luồng âm thanh thoát tự do</text>
+  </g>
+</svg>
